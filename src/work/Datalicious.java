@@ -51,9 +51,9 @@ public class Datalicious {
 		WebDriver driver = new FirefoxDriver();
 		
         driver.get("https://www.google.co.in/?gfe_rd=cr&ei=3bB6WdHnDMiL8QfYrYzwAg");
-        driver.findElement(By.xpath("//input[@id = lst-ib]")).sendKeys("Datalicious");
+        driver.findElement(By.xpath("//input[@id = 'lst-ib']")).sendKeys("Datalicious");
         driver.findElement(By.name("btnK")).click();
-        driver.findElement(By.xpath("a[@href = /url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiEzLXzmKzVAhUDnZQKHeAWC6UQFgglMAA&url=https%3A%2F%2Fwww.datalicious.com%2F&usg=AFQjCNHS-QAjdwk9T4MCEd1QEfeC92Nt7w]")).click();
+        driver.findElement(By.xpath("//*[contains(@href,'datalicious.com')]")).click();
         
         //Task 2: Use proxy to bypass all HTTP responses. Generate .har file and read the contents. 
         proxy.newHar("seleniumeasy.com");
