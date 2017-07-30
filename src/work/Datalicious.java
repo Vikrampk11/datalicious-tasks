@@ -56,7 +56,7 @@ public class Datalicious {
         driver.findElement(By.xpath("//*[contains(@href,'datalicious.com')]")).click();
         
         //Task 2: Use proxy to bypass all HTTP responses. Generate .har file and read the contents. 
-        proxy.newHar("seleniumeasy.com");
+        proxy.newHar("datalicious");
         Thread.sleep(5000);
         Har har = proxy.getHar();
         File harFile = new File(harPath);
