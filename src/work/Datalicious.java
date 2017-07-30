@@ -33,7 +33,7 @@ public class Datalicious {
 	 */
 	public static String harPath="E:\\log.har";
 	public static boolean HitGa = false;
-    public static boolean HitOp= true;
+    	public static boolean HitOp= false;
 	private static String url;
 	private static String urlParam;
 	
